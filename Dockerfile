@@ -1,4 +1,4 @@
-FROM maven:latest AS 'build'
+FROM maven:latest AS build
 COPY . /usr/app 
 WORKDIR /usr/app 
 RUN mvn package
